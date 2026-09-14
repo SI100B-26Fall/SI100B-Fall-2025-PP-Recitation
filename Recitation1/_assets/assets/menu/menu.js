@@ -2,5 +2,12 @@
 
 options.plugins.push(RevealMenu)
 options.menu = {
-    loadIcons: false
+    loadIcons: false,
+    custom: [
+        {
+            title: 'Lectures',
+            icon: '<i class="fas fa-book-open"></i>',
+            src: '../lectures.html'
+        }
+    ]
 }

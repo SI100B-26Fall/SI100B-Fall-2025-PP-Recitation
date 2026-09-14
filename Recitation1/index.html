@@ -167,21 +167,21 @@
 
 ## 好像不对……
 
-**常见问题**：官方安装脚本本质是从 GitHub 下载编译好的二进制文件，教育网/校园网环境下 GitHub 经常连不上或卡住不动，导致安装长时间无响应或直接报错超时。
+**常见问题**：官方安装脚本本质是从 GitHub 下载编译好的二进制文件，国内网络环境下 GitHub 经常连不上或卡住不动，导致安装长时间无响应或直接报错超时。
 
 **Plan B：GitHub 加速镜像**
 
 - Windows:
 
 ```powershell
-$env:UV_DOWNLOAD_URL = "https://ghfast.top/https://github.com/astral-sh/uv/releases/download/0.12.2"
+$env:UV_DOWNLOAD_URL = "https://ghfast.top/https://github.com/astral-sh/uv/releases/download/0.12.13"
 powershell -ExecutionPolicy Bypass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
 - MacOS:
 
 ```bash
-export UV_DOWNLOAD_URL="https://ghfast.top/https://github.com/astral-sh/uv/releases/download/0.12.2"
+export UV_DOWNLOAD_URL="https://ghfast.top/https://github.com/astral-sh/uv/releases/download/0.12.13"
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
@@ -190,7 +190,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 **Plan C**（如果电脑上已经有任意版本的 Python，不推荐）：
 
 ```bash
- # 不推荐
+# 不推荐
 pip install uv -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
@@ -202,7 +202,7 @@ pip install uv -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 **Finally**
 
-- 终端输入 `uv --version` 回车：`0.12.2`
+- 终端输入 `uv --version` 回车：`0.12.13`
 
 <!--v-->
 
@@ -1116,7 +1116,7 @@ while True:
     // options from URL query string
     var queryOptions = Reveal().getQueryHash() || {};
 
-    var options = extend(defaultOptions, {"_":["./materials/Recitation1/Recitation1.md"],"static":"static/Recitation1","template":"./assets/reveal.html","preprocessor":"./assets/preproc.js","scripts":"assets/menu/menu.js,assets/inject.js"}, queryOptions);
+    var options = extend(defaultOptions, {"_":["slides/Recitation1/Recitation1.md"],"static":"static/Recitation1","template":"./assets/reveal.html","preprocessor":"./assets/preproc.js","scripts":"assets/menu/menu.js,assets/inject.js"}, queryOptions);
   </script>
 
   <script src="./_assets/assets/menu/menu.js"></script>
